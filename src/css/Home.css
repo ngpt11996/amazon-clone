@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(243, 243, 243);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 100%;
+}
+
+.home__row{
+    display: flex;
+    z-index: 1;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+    flex-wrap: wrap;
+}
+
+.home__image{
+    width: 100%;
+    /* margin: auto; */
+    z-index: -1;
+    margin-bottom: -200px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0.5));   
+}
+
+.slider{
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+

@@ -1,0 +1,302 @@
+[debug] [2024-01-04T00:13:56.495Z] ----------------------------------------------------------------------
+[debug] [2024-01-04T00:13:56.499Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-01-04T00:13:56.500Z] CLI Version:   12.7.0
+[debug] [2024-01-04T00:13:56.501Z] Platform:      win32
+[debug] [2024-01-04T00:13:56.501Z] Node Version:  v18.17.1
+[debug] [2024-01-04T00:13:56.503Z] Time:          Thu Jan 04 2024 05:43:56 GMT+0530 (India Standard Time)
+[debug] [2024-01-04T00:13:56.503Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-04T00:13:56.510Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-01-04T00:13:56.729Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-04T00:13:56.729Z] > authorizing via signed-in user (ngpt11996@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2024-01-04T00:13:56.752Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-04T00:13:56.753Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-04T00:13:56.754Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-01-04T00:13:56.782Z] [hub] writing locator at C:\Users\USER\AppData\Local\Temp\hub-challenge-64265.json
+[debug] [2024-01-04T00:13:56.820Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-04T00:13:56.820Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-01-04T00:13:56.820Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2024-01-04T00:13:56.825Z] defaultcredentials: writing to file C:\Users\USER\AppData\Roaming\firebase\ngpt11996_gmail_com_application_default_credentials.json
+[debug] [2024-01-04T00:13:56.830Z] Setting GAC to C:\Users\USER\AppData\Roaming\firebase\ngpt11996_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\USER\\AppData\\Roaming\\firebase\\ngpt11996_gmail_com_application_default_credentials.json"}}
+[debug] [2024-01-04T00:13:56.833Z] > refreshing access token with scopes: []
+[debug] [2024-01-04T00:13:56.835Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-04T00:13:56.835Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-04T00:13:57.174Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-01-04T00:13:57.174Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-04T00:13:57.191Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-64265/adminSdkConfig [none]
+[debug] [2024-01-04T00:13:57.681Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-01-04T00:13:57.682Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-01-04T00:13:58.603Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-64265/adminSdkConfig 200
+[debug] [2024-01-04T00:13:58.604Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-64265/adminSdkConfig {"projectId":"challenge-64265","storageBucket":"challenge-64265.appspot.com"}
+[debug] [2024-01-04T00:13:58.643Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/challenge-64265/sites 
+[debug] [2024-01-04T00:14:00.126Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/challenge-64265/sites 200
+[debug] [2024-01-04T00:14:00.127Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/challenge-64265/sites {"sites":[{"name":"projects/challenge-64265/sites/challenge-64265","defaultUrl":"https://challenge-64265.web.app","appId":"1:308355708734:web:239d7dde749c89a8221e6f","type":"DEFAULT_SITE"}]}
+[debug] [2024-01-04T00:14:00.127Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-64265/webApps/1:308355708734:web:239d7dde749c89a8221e6f/config [none]
+[debug] [2024-01-04T00:14:01.121Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-64265/webApps/1:308355708734:web:239d7dde749c89a8221e6f/config 200
+[debug] [2024-01-04T00:14:01.121Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-64265/webApps/1:308355708734:web:239d7dde749c89a8221e6f/config {"projectId":"challenge-64265","appId":"1:308355708734:web:239d7dde749c89a8221e6f","storageBucket":"challenge-64265.appspot.com","apiKey":"AIzaSyDVG6bAsVwncY2Oi9sbz4k1MaAg38duz2g","authDomain":"challenge-64265.firebaseapp.com","messagingSenderId":"308355708734","measurementId":"G-CR00F0910L"}
+[debug] [2024-01-04T00:14:01.129Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-64265 [none]
+[debug] [2024-01-04T00:14:01.799Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-64265 200
+[debug] [2024-01-04T00:14:01.800Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-64265 {"projectId":"challenge-64265","projectNumber":"308355708734","displayName":"amazon-challenge","name":"projects/challenge-64265","resources":{"hostingSite":"challenge-64265"},"state":"ACTIVE","etag":"1_6e9f09a5-d651-427b-ba27-e074af99746a"}
+[info] i  hosting[challenge-64265]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[challenge-64265]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-01-04T00:14:01.836Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-01-04T00:14:01.836Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-01-04T00:14:01.837Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\USER\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\USER\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-01-04T00:14:02.120Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-01-04T00:14:02.121Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\USER\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\USER\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2024-01-04T00:14:02.135Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-01-04T00:14:07.441Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.4.1",
+    "stripe": "^13.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-01-04T00:14:07.441Z] Building nodejs source
+[debug] [2024-01-04T00:14:07.442Z] Failed to find version of module node: reached end of search path C:\Users\USER\amazon-clone\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2024-01-04T00:14:07.445Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-01-04T00:14:07.462Z] Found firebase-functions binary at 'C:\Users\USER\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8068
+
+[debug] [2024-01-04T00:14:10.374Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/challenge-64265/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/challenge-64265/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-01-04T00:15:06.089Z] [work-queue] {"queuedWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:15:06.088Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:15:06.090Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:15:06.088Z"],"workRunningCount":1}
+[debug] [2024-01-04T00:15:06.090Z] Accepted request OPTIONS /challenge-64265/us-central1/api/payments/create?total=49998 --> us-central1-api
+[debug] [2024-01-04T00:15:06.092Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-04T00:15:06.094Z] [functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998"}}
+[debug] [2024-01-04T00:15:06.121Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-01-04T00:15:06.124Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2024-01-04T00:15:08.511Z] [runtime-status] [24092] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"C:\\Users\\USER\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24092] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"C:\\\\Users\\\\USER\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-04T00:15:08.513Z] [runtime-status] [24092] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\USER\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24092] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\USER\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-04T00:15:08.514Z] [runtime-status] [24092] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24092] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-01-04T00:15:08.518Z] [runtime-status] [24092] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\USER\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24092] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\USER\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-04T00:15:08.960Z] [runtime-status] [24092] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24092] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-01-04T00:15:08.961Z] [runtime-status] [24092] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\USER\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24092] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\USER\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-01-04T00:15:08.962Z] [runtime-status] [24092] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\USER\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24092] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\USER\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-04T00:15:08.965Z] [runtime-status] [24092] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.10.1","resolution":"C:\\Users\\USER\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24092] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"C:\\\\Users\\\\USER\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-01-04T00:15:08.973Z] [runtime-status] [24092] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\USER\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24092] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\USER\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-01-04T00:15:08.975Z] [runtime-status] [24092] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.10.1","resolution":"C:\\Users\\USER\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24092] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.10.1\",\"resolution\":\"C:\\\\Users\\\\USER\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-01-04T00:15:09.334Z] [runtime-status] [24092] Functions runtime initialized. {"cwd":"C:\\Users\\USER\\amazon-clone\\functions","node_version":"18.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24092] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\USER\\\\amazon-clone\\\\functions\",\"node_version\":\"18.17.1\"}"}}
+[debug] [2024-01-04T00:15:09.334Z] [runtime-status] [24092] Listening to port: \\?\pipe\fire_emu_76d678f08d6ac104 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24092] Listening to port: \\\\?\\pipe\\fire_emu_76d678f08d6ac104"}}
+[debug] [2024-01-04T00:15:09.442Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE"}}
+[debug] [2024-01-04T00:15:09.444Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-01-04T00:15:09.445Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY"}}
+[debug] [2024-01-04T00:15:09.456Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 10.6201ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 10.6201ms"}}
+[debug] [2024-01-04T00:15:09.457Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE"}}
+[debug] [2024-01-04T00:15:09.458Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-04T00:15:09.458Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-04T00:15:09.459Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:15:09.461Z] [work-queue] {"queuedWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:15:09.461Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:15:09.461Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:15:09.461Z"],"workRunningCount":1}
+[debug] [2024-01-04T00:15:09.462Z] Accepted request POST /challenge-64265/us-central1/api/payments/create?total=49998 --> us-central1-api
+[debug] [2024-01-04T00:15:09.462Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-04T00:15:09.463Z] [functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998"}}
+[debug] [2024-01-04T00:15:09.463Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-01-04T00:15:09.464Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY"}}
+[info] >  Payment Request Recieved BOOM!!! for this amount 49998 {"user":"Payment Request Recieved BOOM!!! for this amount 49998","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request Recieved BOOM!!! for this amount 49998"}}
+[debug] [2024-01-04T00:15:10.218Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 754.5349ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 754.5349ms"}}
+[debug] [2024-01-04T00:15:10.220Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE"}}
+[debug] [2024-01-04T00:15:10.221Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-04T00:15:10.221Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-04T00:15:10.222Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:16:48.810Z] [work-queue] {"queuedWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:16:48.810Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:16:48.811Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:16:48.810Z"],"workRunningCount":1}
+[debug] [2024-01-04T00:16:48.811Z] Accepted request OPTIONS /challenge-64265/us-central1/api/payments/create?total=49998 --> us-central1-api
+[debug] [2024-01-04T00:16:48.812Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-04T00:16:48.812Z] [functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998"}}
+[debug] [2024-01-04T00:16:48.812Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-01-04T00:16:48.813Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY"}}
+[debug] [2024-01-04T00:16:48.820Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 7.3466ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 7.3466ms"}}
+[debug] [2024-01-04T00:16:48.822Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE"}}
+[debug] [2024-01-04T00:16:48.823Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-04T00:16:48.823Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-04T00:16:48.824Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:16:48.826Z] [work-queue] {"queuedWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:16:48.826Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:16:48.826Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:16:48.826Z"],"workRunningCount":1}
+[debug] [2024-01-04T00:16:48.826Z] Accepted request POST /challenge-64265/us-central1/api/payments/create?total=49998 --> us-central1-api
+[debug] [2024-01-04T00:16:48.827Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-04T00:16:48.827Z] [functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998"}}
+[debug] [2024-01-04T00:16:48.828Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-01-04T00:16:48.829Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY"}}
+[info] >  Payment Request Recieved BOOM!!! for this amount 49998 {"user":"Payment Request Recieved BOOM!!! for this amount 49998","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request Recieved BOOM!!! for this amount 49998"}}
+[debug] [2024-01-04T00:16:49.384Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 555.7108ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 555.7108ms"}}
+[debug] [2024-01-04T00:16:49.388Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE"}}
+[debug] [2024-01-04T00:16:49.389Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-04T00:16:49.391Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-04T00:16:49.392Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:21:05.597Z] [work-queue] {"queuedWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:21:05.596Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:21:05.597Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:21:05.596Z"],"workRunningCount":1}
+[debug] [2024-01-04T00:21:05.597Z] Accepted request OPTIONS /challenge-64265/us-central1/api/payments/create?total=49998 --> us-central1-api
+[debug] [2024-01-04T00:21:05.598Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-04T00:21:05.599Z] [functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998"}}
+[debug] [2024-01-04T00:21:05.599Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-01-04T00:21:05.600Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY"}}
+[debug] [2024-01-04T00:21:05.605Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 5.1733ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.1733ms"}}
+[debug] [2024-01-04T00:21:05.607Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE"}}
+[debug] [2024-01-04T00:21:05.607Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-04T00:21:05.608Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-04T00:21:05.608Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:21:05.609Z] [work-queue] {"queuedWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:21:05.609Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:21:05.609Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:21:05.609Z"],"workRunningCount":1}
+[debug] [2024-01-04T00:21:05.610Z] Accepted request POST /challenge-64265/us-central1/api/payments/create?total=49998 --> us-central1-api
+[debug] [2024-01-04T00:21:05.610Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-04T00:21:05.611Z] [functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998"}}
+[debug] [2024-01-04T00:21:05.611Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-01-04T00:21:05.613Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY"}}
+[info] >  Payment Request Recieved BOOM!!! for this amount 49998 {"user":"Payment Request Recieved BOOM!!! for this amount 49998","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request Recieved BOOM!!! for this amount 49998"}}
+[debug] [2024-01-04T00:21:06.542Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 929.3132ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 929.3132ms"}}
+[debug] [2024-01-04T00:21:06.544Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE"}}
+[debug] [2024-01-04T00:21:06.544Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-04T00:21:06.545Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-04T00:21:06.545Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:22:16.941Z] [work-queue] {"queuedWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:22:16.941Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:22:16.941Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:22:16.941Z"],"workRunningCount":1}
+[debug] [2024-01-04T00:22:16.942Z] Accepted request OPTIONS /challenge-64265/us-central1/api/payments/create?total=49998 --> us-central1-api
+[debug] [2024-01-04T00:22:16.942Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-04T00:22:16.943Z] [functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998"}}
+[debug] [2024-01-04T00:22:16.943Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-01-04T00:22:16.945Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY"}}
+[debug] [2024-01-04T00:22:16.951Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 5.804ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 5.804ms"}}
+[debug] [2024-01-04T00:22:16.952Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE"}}
+[debug] [2024-01-04T00:22:16.953Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-04T00:22:16.953Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-04T00:22:16.953Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:22:16.954Z] [work-queue] {"queuedWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:22:16.954Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:22:16.955Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:22:16.954Z"],"workRunningCount":1}
+[debug] [2024-01-04T00:22:16.955Z] Accepted request POST /challenge-64265/us-central1/api/payments/create?total=49998 --> us-central1-api
+[debug] [2024-01-04T00:22:16.956Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-04T00:22:16.957Z] [functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=49998, mapping to path=/payments/create?total=49998"}}
+[debug] [2024-01-04T00:22:16.958Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-01-04T00:22:16.960Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY"}}
+[info] >  Payment Request Recieved BOOM!!! for this amount 49998 {"user":"Payment Request Recieved BOOM!!! for this amount 49998","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request Recieved BOOM!!! for this amount 49998"}}
+[debug] [2024-01-04T00:22:17.383Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 423.4679ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 423.4679ms"}}
+[debug] [2024-01-04T00:22:17.385Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE"}}
+[debug] [2024-01-04T00:22:17.385Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-04T00:22:17.386Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-04T00:22:17.386Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:46:13.241Z] [work-queue] {"queuedWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:46:13.241Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:46:13.243Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:46:13.241Z"],"workRunningCount":1}
+[debug] [2024-01-04T00:46:13.244Z] Accepted request OPTIONS /challenge-64265/us-central1/api/payments/create?total=184997 --> us-central1-api
+[debug] [2024-01-04T00:46:13.249Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-04T00:46:13.250Z] [functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=184997, mapping to path=/payments/create?total=184997 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=184997, mapping to path=/payments/create?total=184997"}}
+[debug] [2024-01-04T00:46:13.251Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-01-04T00:46:13.254Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY"}}
+[debug] [2024-01-04T00:46:13.271Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 17.7244ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 17.7244ms"}}
+[debug] [2024-01-04T00:46:13.277Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE"}}
+[debug] [2024-01-04T00:46:13.277Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-04T00:46:13.278Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-04T00:46:13.278Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:46:13.282Z] [work-queue] {"queuedWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:46:13.282Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:46:13.282Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:46:13.282Z"],"workRunningCount":1}
+[debug] [2024-01-04T00:46:13.283Z] Accepted request POST /challenge-64265/us-central1/api/payments/create?total=184997 --> us-central1-api
+[debug] [2024-01-04T00:46:13.283Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-04T00:46:13.284Z] [functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=184997, mapping to path=/payments/create?total=184997 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=184997, mapping to path=/payments/create?total=184997"}}
+[debug] [2024-01-04T00:46:13.285Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-01-04T00:46:13.296Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY"}}
+[info] >  Payment Request Recieved BOOM!!! for this amount 184997 {"user":"Payment Request Recieved BOOM!!! for this amount 184997","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request Recieved BOOM!!! for this amount 184997"}}
+[debug] [2024-01-04T00:46:14.108Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 813.1709ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 813.1709ms"}}
+[debug] [2024-01-04T00:46:14.110Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE"}}
+[debug] [2024-01-04T00:46:14.110Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-04T00:46:14.110Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-04T00:46:14.110Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:50:38.759Z] [work-queue] {"queuedWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:50:38.759Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:50:38.759Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:50:38.759Z"],"workRunningCount":1}
+[debug] [2024-01-04T00:50:38.759Z] Accepted request OPTIONS /challenge-64265/us-central1/api/payments/create?total=177996 --> us-central1-api
+[debug] [2024-01-04T00:50:38.759Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-04T00:50:38.760Z] [functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=177996, mapping to path=/payments/create?total=177996 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=177996, mapping to path=/payments/create?total=177996"}}
+[debug] [2024-01-04T00:50:38.760Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-01-04T00:50:38.761Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY"}}
+[debug] [2024-01-04T00:50:38.765Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 4.2305ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 4.2305ms"}}
+[debug] [2024-01-04T00:50:38.766Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE"}}
+[debug] [2024-01-04T00:50:38.766Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-04T00:50:38.767Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-04T00:50:38.767Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:50:38.768Z] [work-queue] {"queuedWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:50:38.768Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-01-04T00:50:38.769Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/challenge-64265/us-central1/api/payments/create-2024-01-04T00:50:38.768Z"],"workRunningCount":1}
+[debug] [2024-01-04T00:50:38.769Z] Accepted request POST /challenge-64265/us-central1/api/payments/create?total=177996 --> us-central1-api
+[debug] [2024-01-04T00:50:38.769Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-01-04T00:50:38.769Z] [functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=177996, mapping to path=/payments/create?total=177996 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/challenge-64265/us-central1/api/payments/create?total=177996, mapping to path=/payments/create?total=177996"}}
+[debug] [2024-01-04T00:50:38.769Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-01-04T00:50:38.770Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: BUSY"}}
+[info] >  Payment Request Recieved BOOM!!! for this amount 177996 {"user":"Payment Request Recieved BOOM!!! for this amount 177996","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request Recieved BOOM!!! for this amount 177996"}}
+[debug] [2024-01-04T00:50:39.388Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 618.3278ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 618.3278ms"}}
+[debug] [2024-01-04T00:50:39.390Z] [worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-56ff6640-8c56-4264-8c56-bdf0fed36d08]: IDLE"}}
+[debug] [2024-01-04T00:50:39.390Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-01-04T00:50:39.391Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-01-04T00:50:39.391Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}

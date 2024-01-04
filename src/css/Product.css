@@ -1,0 +1,56 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    min-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    z-index: 1;
+}
+
+.product > img{
+    min-height: 200px;
+    max-height: 250px;
+    /* flex-grow:1 */
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    margin-bottom: 15px;
+}
+
+.product_price{
+    margin-top: 5px;
+}
+
+.product__info{
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.product > button{
+    background-color: #f0c14b;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    padding: 4px 8px 4px 8px;
+    border-radius: 5px;
+}
+
+.product__rating{
+    display: flex;
+}
+
+
+/*Stacking context
+https://stackoverflow.com/questions/3616587/is-it-possible-to-have-a-child-element-behind-his-parent-element-with-z-index
+what is stacking context in css
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context
+*/
